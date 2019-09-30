@@ -55,7 +55,9 @@ p <- smoking_perc_by_e_cig %>%
                y = perc,
                #colour = cigarette_status,
                fill = cigarette_status) +
-  ggplot2::geom_bar(stat = "identity") +
+  ggplot2::geom_bar(stat = "identity",
+                    width=0.5, 
+                    position = position_dodge2(width=0)) +
   ggplot2::facet_grid(facets = ~cigarette_status,
                       rows = 1) +
   ggplot2::coord_flip() +
@@ -135,10 +137,11 @@ p <- smoke_vape %>%
               colour = category,
                fill = category) + 
   ggplot2::geom_bar(stat = "identity",
-                    position = "dodge") +
+                    position = "dodge",
+                    width = 0.7) +
   ggplot2::geom_text(aes(label = paste(perc,"%")),
-            size = 4, 
-            position = position_dodge(width = 1),
+            size = 5, 
+            position = position_dodge(width = 0.7),
                                        hjust= 1.2,
             colour = "white")  +
   ggplot2::coord_flip() +
@@ -218,16 +221,18 @@ p <- smoking_perc_by_e_cig %>%
   ggplot2::ggplot() +
   ggplot2::aes(x = reorder(Year, desc(Year)),
                 y = perc,
-                colour = e_cig_status,
+               # colour = e_cig_status,
                fill = e_cig_status
                           ) +
-  ggplot2::geom_bar(stat = "identity") +
+  ggplot2::geom_bar(stat = "identity",
+                    width=0.5 
+                    ) +
   ggplot2::facet_grid(facets = ~cigarette_status) +
   geom_text(aes(label = perc),
             data = smoking_perc_by_e_cig %>% filter(perc>6),
-            size = 3, 
+            size = 4, 
             position = position_stack(vjust = 0.5),
-            colour = "black") +
+            colour = "white") +
   ggplot2::theme_minimal() +
   ggplot2::coord_flip() +
     theme(
@@ -276,3 +281,4 @@ ggplot2::ggsave(file="Stacked.svg",
 </p>
 </details>
 
+To further reduce the cognigive burden the non-vaping categories in grey could be lumped into one category....
