@@ -1,35 +1,30 @@
-Improving a newspaper data vis story
-================
+---
+title: "Improving a newspaper data vis story"
+output:
+  github_document:
+    toc: true
+    toc_depth: 2
+always_allow_html: yes
+---
 
-[“Vaping lung illnesses spread as hundreds more affected in
-US”](https://www.thetimes.co.uk/article/vaping-lung-illnesses-spread-as-hundreds-more-affected-in-us-5jdxkrqk6?shareToken=dfeabd933f4edbb5aa4c2472f99e9201)
-was a Times newspaper story from September 2019. While the article
-described vaping in America it included a chart of UK growth in
-e-cigarette use. The chart contained figures from the ONS [“E-cigartte
-use in Great
-Britain”](https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/drugusealcoholandsmoking/datasets/ecigaretteuseingreatbritain)
-data set.
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
 
-As the chart can only be viewed by Times subscribers it has been
-re-created below using the same ONS figures with a very similar layout
-and style.
+["Vaping lung illnesses spread as hundreds more affected in US"](https://www.thetimes.co.uk/article/vaping-lung-illnesses-spread-as-hundreds-more-affected-in-us-5jdxkrqk6?shareToken=dfeabd933f4edbb5aa4c2472f99e9201) was a Times newspaper story from September 2019. While the article described vaping in America it included a chart of UK growth in e-cigarette use. The chart contained figures from the ONS ["E-cigartte use in Great Britain"](https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/drugusealcoholandsmoking/datasets/ecigaretteuseingreatbritain) data set. 
 
-The title tells us the chart is about the growth of vaping in the UK.
-However, it’s not clear what the percentages represent. What are they
-percentages of? None of the figures add up to 100% either horizontally
-across each row or vertically down each column. There must be additional
-percentages not shown. Using the original data let’s see if we can
-present a clearer and more engaging data story.
+As the chart can only be viewed by Times subscribers it has been re-created below using the same ONS figures with a very similar layout and style.
 
-<img src="TheTimes.svg" width="90%" />
+The title tells us the chart is about the growth of vaping in the UK. However, it's not clear what the percentages represent. What are they percentages of? None of the figures add up to 100% either horizontally across each row or vertically down each column. There must be additional percentages not shown. Using the original data let's see if we can present a clearer and more engaging data story.
 
-<details>
+```{r, echo=FALSE, out.width="90%"}
+knitr::include_graphics("TheTimes.svg") 
+```
 
-<summary>Show code</summary>
-
+<details><summary>Show code</summary>
 <p>
 
-``` r
+```{r TheTimes}
 library(tidyverse)
 library(readxl)
 
@@ -105,40 +100,23 @@ ggplot2::ggsave(file="TheTimes.svg",
                 width=10, 
                 height=6)
 ```
-
 </p>
-
 </details>
-
 <br/>
 
-First, we need to understand the original data better. What do the
-percentages actually represent? By inspecting the original ONS data we
-can see that the “Total” column in the Times chart is the percentage of
-the entire UK population using e-cigarettes according to the ONS survey.
+First, we need to understand the original data better. What do the percentages actually represent? By inspecting the original ONS data we can see that the "Total" column in the Times chart is the percentage of the entire UK population using e-cigarettes according to the ONS survey.
 
-One improvement option is to chart only the percentage of UK vapers in
-the UK. And to contrast that against the percentage of cigarette smoking
-to see if it also changing each year. The chart below shows this
-comparison using data from the [Adult smoking habits in the
-UK: 2018](https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/bulletins/adultsmokinghabitsingreatbritain/2018)
-ONS report. We can see a gradual drop in smoking each year as well as a
-gradual rise in vaping.
+One improvement option is to chart only the percentage of UK vapers in the UK. And to contrast that against the percentage of cigarette smoking to see if it also changing each year. The chart below shows this comparison using data from the [Adult smoking habits in the UK: 2018](https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/bulletins/adultsmokinghabitsingreatbritain/2018) ONS report. We can see a gradual drop in smoking each year as well as a gradual rise in vaping. 
 
-Can we conclude from this chart that smokers quitting are taking up
-vaping? Perhaps. But not if new e-cigarette users have continued smoking
-or if new vapers have never smoked. We can test our theories with the
-next new chart.
+Can we conclude from this chart that smokers quitting are taking up vaping? Perhaps. But not if new e-cigarette users have continued smoking or if new vapers have never smoked. We can test our theories with the next new chart. 
 
-![](WholePop.svg)<!-- -->
+```{r, echo=FALSE,  fig.width=7, fig.height=3}
+knitr::include_graphics("WholePop.svg") 
+```
 
-<details>
-
-<summary>Show code</summary>
-
+<details><summary>Show code</summary>
 <p>
-
-``` r
+```{r Overall}
 smoke_vape <- data.frame(
         Year = c(2014, 2015, 2016, 2017, 2018),
       e_cigarettes = c(3.7, 4.5, 5.6, 5.5, 6.3),
@@ -207,41 +185,23 @@ ggplot2::ggsave(file="WholePop.svg",
                 device = "svg",
                 width=10, 
                 height=6)
+
 ```
-
 </p>
-
 </details>
-
 <br/>
 
-This chart includes more of the ONS data than was shown in the original
-Times chart. The percentages in orange are the same percentages of
-vapers found in the first three columns of the original. but in
-addition, this chart includes all the other categories of vaping
-behaviour so that the percentages in each horizontal bar add up to 100%
-(i.e. also including “Never vaped”, “Tried vaping but didn’t continue to
-vape” and “Ex-vaper” percentages).
+This chart includes more of the ONS data than was shown in the original Times chart. The percentages in orange are the same percentages of vapers found in the first three columns of the original. but in addition, this chart includes all the other categories of vaping behaviour so that the percentages in each horizontal bar add up to 100% (i.e. also including "Never vaped", "Tried vaping but didn't continue to vape" and "Ex-vaper" percentages).
 
-Does the greater detail make this chart easier to understand than the
-original? Possibly. To reduce the cognitive burden for readers the the
-main category of interest (the percentage of vapers) is picked out with
-a strong orange colour while the other categories that are all different
-kinds of non-vapers are shaded in grey tones. This aims to draw our
-attention to the main story which is that vaping is growing each year
-almost entirely among current and ex-cigarette smokers, not among those
-who have never smoked. Perhaps a worrying trend for tobacco companies if
-market growth is only among current or former smokers?
+Does the greater detail make this chart easier to understand than the original? Possibly. To reduce the cognitive burden for readers the the main category of interest (the percentage of vapers) is picked out with a strong orange colour while the other categories that are all different kinds of non-vapers are shaded in grey tones. This aims to draw our attention to the main story which is that vaping is growing each year almost entirely among current and ex-cigarette smokers, not among those who have never smoked. Perhaps a worrying trend for tobacco companies if market growth is only among current or former smokers?
 
-![](Stacked.svg)<!-- -->
+```{r, echo=FALSE,  fig.width=7, fig.height=3}
+knitr::include_graphics("Stacked.svg") 
+```
 
-<details>
-
-<summary>Show code</summary>
-
+<details><summary>Show code</summary>
 <p>
-
-``` r
+```{r fuller_data, fig.width=9, fig.height=6}
 #RColorBrewer::display.brewer.all()
 my_pallete <- c("#696969","#808080","#A9A9A9","#F28B67")
 
@@ -311,8 +271,8 @@ ggplot2::ggsave(file="Stacked.svg",
                 device = "svg",
                 width=10, 
                 height=6)
+
 ```
-
 </p>
-
 </details>
+
