@@ -303,7 +303,7 @@ smoking_perc_by_e_cig2 <-
   dplyr::summarise(perc = sum(perc)) %>% 
   dplyr::ungroup()
 
-smoking_perc_by_e_cig2 %>% 
+p <- smoking_perc_by_e_cig2 %>% 
   ggplot2::ggplot() +
   ggplot2::aes(x = reorder(Year, desc(Year)),
                 y = perc,
@@ -314,7 +314,7 @@ smoking_perc_by_e_cig2 %>%
                     width=0.5 
                     ) +
   ggplot2::facet_grid(facets = ~cigarette_status) +
-  geom_text(aes(label = perc),
+  geom_text(aes(label = round(perc,0)),
             data = smoking_perc_by_e_cig2,
             size = 4, 
             position = position_stack(vjust = 0.5),

@@ -348,7 +348,7 @@ smoking_perc_by_e_cig2 <-
   dplyr::summarise(perc = sum(perc)) %>% 
   dplyr::ungroup()
 
-smoking_perc_by_e_cig2 %>% 
+p <- smoking_perc_by_e_cig2 %>% 
   ggplot2::ggplot() +
   ggplot2::aes(x = reorder(Year, desc(Year)),
                 y = perc,
@@ -359,7 +359,7 @@ smoking_perc_by_e_cig2 %>%
                     width=0.5 
                     ) +
   ggplot2::facet_grid(facets = ~cigarette_status) +
-  geom_text(aes(label = perc),
+  geom_text(aes(label = round(perc,0)),
             data = smoking_perc_by_e_cig2,
             size = 4, 
             position = position_stack(vjust = 0.5),
@@ -401,11 +401,8 @@ smoking_perc_by_e_cig2 %>%
                   fill = guide_legend(reverse = TRUE)) +
   ggplot2::scale_y_continuous(breaks=c(0,100),
                               labels = function(x) paste0(x, "%"))
-```
 
-![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
-``` r
 ggplot2::ggsave(file="StackedSimple.svg",
                 plot = last_plot(),
                 device = "svg",
