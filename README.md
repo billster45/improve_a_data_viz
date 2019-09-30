@@ -228,10 +228,10 @@ original? Possibly. To reduce the cognitive burden for readers the the
 main category of interest (the percentage of vapers) is picked out with
 a strong orange colour, while the three other non-vaping categories are
 shaded in grey tones. The aim is to draw our attention to the main story
-in orange which shows vaping is growing each year almost entirely among
-current and ex-smokers, not among those who have never smoked. Perhaps a
-worrying trend for tobacco companies if market growth is only among
-current or former smokers?
+in orange which is that **vaping is growing each year almost entirely
+among current and ex-smokers, not among those who have never smoked.**
+Perhaps a worrying trend for tobacco companies if market growth is only
+among current or former smokers?
 
 ![](Stacked.svg)<!-- -->
 
@@ -298,8 +298,8 @@ p <- smoking_perc_by_e_cig %>%
         ) +
   ggplot2::scale_fill_manual(values = my_pallete) +
   ggplot2::scale_color_manual(values = my_pallete) +
-  ggplot2::labs(title = "Growing percentage of e-cigarette smokers in the UK",
-                subtitle = "e-cigarette smoking in orange shown by smoking status",
+  ggplot2::labs(title = "Vaping growing only among smokers and ex-smokers in the UK",
+                subtitle = "e-cigarette user percentages in orange shown by smoking status",
                 caption = "Source: Office for National Statistics") +
   ggplot2::guides(color = guide_legend(reverse = TRUE),
                   fill = guide_legend(reverse = TRUE)) +
