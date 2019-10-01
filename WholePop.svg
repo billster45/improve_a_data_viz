@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 720.00 432.00'>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 504.00 360.00'>
 <defs>
   <style type='text/css'><![CDATA[
     line, polyline, polygon, path, rect, circle {
@@ -13,45 +13,45 @@
 </defs>
 <rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
 <defs>
-  <clipPath id='cpMzcuMTF8NTc4LjQ4fDQwNy4xOXw1My40OQ=='>
-    <rect x='37.11' y='53.49' width='541.37' height='353.70' />
+  <clipPath id='cpMzcuMTF8MzYyLjQ4fDMzNS4xOXw1My40OQ=='>
+    <rect x='37.11' y='53.49' width='325.37' height='281.70' />
   </clipPath>
 </defs>
-<rect x='61.71' y='342.57' width='164.92' height='23.81' style='stroke-width: 1.07; stroke: #F28B67; stroke-linecap: square; stroke-linejoin: miter; fill: #F28B67;' clip-path='url(#cpMzcuMTF8NTc4LjQ4fDQwNy4xOXw1My40OQ==)' />
-<rect x='61.71' y='366.37' width='434.56' height='23.81' style='stroke-width: 1.07; stroke: #58718F; stroke-linecap: square; stroke-linejoin: miter; fill: #58718F;' clip-path='url(#cpMzcuMTF8NTc4LjQ4fDQwNy4xOXw1My40OQ==)' />
-<rect x='61.71' y='274.55' width='143.98' height='23.81' style='stroke-width: 1.07; stroke: #F28B67; stroke-linecap: square; stroke-linejoin: miter; fill: #F28B67;' clip-path='url(#cpMzcuMTF8NTc4LjQ4fDQwNy4xOXw1My40OQ==)' />
-<rect x='61.71' y='298.36' width='439.80' height='23.81' style='stroke-width: 1.07; stroke: #58718F; stroke-linecap: square; stroke-linejoin: miter; fill: #58718F;' clip-path='url(#cpMzcuMTF8NTc4LjQ4fDQwNy4xOXw1My40OQ==)' />
-<rect x='61.71' y='206.53' width='146.60' height='23.81' style='stroke-width: 1.07; stroke: #F28B67; stroke-linecap: square; stroke-linejoin: miter; fill: #F28B67;' clip-path='url(#cpMzcuMTF8NTc4LjQ4fDQwNy4xOXw1My40OQ==)' />
-<rect x='61.71' y='230.34' width='421.47' height='23.81' style='stroke-width: 1.07; stroke: #58718F; stroke-linecap: square; stroke-linejoin: miter; fill: #58718F;' clip-path='url(#cpMzcuMTF8NTc4LjQ4fDQwNy4xOXw1My40OQ==)' />
-<rect x='61.71' y='138.51' width='117.80' height='23.81' style='stroke-width: 1.07; stroke: #F28B67; stroke-linecap: square; stroke-linejoin: miter; fill: #F28B67;' clip-path='url(#cpMzcuMTF8NTc4LjQ4fDQwNy4xOXw1My40OQ==)' />
-<rect x='61.71' y='162.32' width='465.98' height='23.81' style='stroke-width: 1.07; stroke: #58718F; stroke-linecap: square; stroke-linejoin: miter; fill: #58718F;' clip-path='url(#cpMzcuMTF8NTc4LjQ4fDQwNy4xOXw1My40OQ==)' />
-<rect x='61.71' y='70.49' width='96.86' height='23.81' style='stroke-width: 1.07; stroke: #F28B67; stroke-linecap: square; stroke-linejoin: miter; fill: #F28B67;' clip-path='url(#cpMzcuMTF8NTc4LjQ4fDQwNy4xOXw1My40OQ==)' />
-<rect x='61.71' y='94.30' width='492.16' height='23.81' style='stroke-width: 1.07; stroke: #58718F; stroke-linecap: square; stroke-linejoin: miter; fill: #58718F;' clip-path='url(#cpMzcuMTF8NTc4LjQ4fDQwNy4xOXw1My40OQ==)' />
-<g clip-path='url(#cpMzcuMTF8NTc4LjQ4fDQwNy4xOXw1My40OQ==)'><text x='182.98' y='359.56' style='font-size: 14.23px; fill: #FFFFFF; font-family: Arial;' textLength='36.38px' lengthAdjust='spacingAndGlyphs'>6.3 %</text></g>
-<g clip-path='url(#cpMzcuMTF8NTc4LjQ4fDQwNy4xOXw1My40OQ==)'><text x='443.13' y='383.37' style='font-size: 14.23px; fill: #FFFFFF; font-family: Arial;' textLength='44.29px' lengthAdjust='spacingAndGlyphs'>16.6 %</text></g>
-<g clip-path='url(#cpMzcuMTF8NTc4LjQ4fDQwNy4xOXw1My40OQ==)'><text x='162.04' y='291.54' style='font-size: 14.23px; fill: #FFFFFF; font-family: Arial;' textLength='36.38px' lengthAdjust='spacingAndGlyphs'>5.5 %</text></g>
-<g clip-path='url(#cpMzcuMTF8NTc4LjQ4fDQwNy4xOXw1My40OQ==)'><text x='448.36' y='315.35' style='font-size: 14.23px; fill: #FFFFFF; font-family: Arial;' textLength='44.29px' lengthAdjust='spacingAndGlyphs'>16.8 %</text></g>
-<g clip-path='url(#cpMzcuMTF8NTc4LjQ4fDQwNy4xOXw1My40OQ==)'><text x='164.66' y='223.53' style='font-size: 14.23px; fill: #FFFFFF; font-family: Arial;' textLength='36.38px' lengthAdjust='spacingAndGlyphs'>5.6 %</text></g>
-<g clip-path='url(#cpMzcuMTF8NTc4LjQ4fDQwNy4xOXw1My40OQ==)'><text x='430.04' y='247.33' style='font-size: 14.23px; fill: #FFFFFF; font-family: Arial;' textLength='44.29px' lengthAdjust='spacingAndGlyphs'>16.1 %</text></g>
-<g clip-path='url(#cpMzcuMTF8NTc4LjQ4fDQwNy4xOXw1My40OQ==)'><text x='135.86' y='155.51' style='font-size: 14.23px; fill: #FFFFFF; font-family: Arial;' textLength='36.38px' lengthAdjust='spacingAndGlyphs'>4.5 %</text></g>
-<g clip-path='url(#cpMzcuMTF8NTc4LjQ4fDQwNy4xOXw1My40OQ==)'><text x='474.54' y='179.31' style='font-size: 14.23px; fill: #FFFFFF; font-family: Arial;' textLength='44.29px' lengthAdjust='spacingAndGlyphs'>17.8 %</text></g>
-<g clip-path='url(#cpMzcuMTF8NTc4LjQ4fDQwNy4xOXw1My40OQ==)'><text x='114.92' y='87.49' style='font-size: 14.23px; fill: #FFFFFF; font-family: Arial;' textLength='36.38px' lengthAdjust='spacingAndGlyphs'>3.7 %</text></g>
-<g clip-path='url(#cpMzcuMTF8NTc4LjQ4fDQwNy4xOXw1My40OQ==)'><text x='500.72' y='111.30' style='font-size: 14.23px; fill: #FFFFFF; font-family: Arial;' textLength='44.29px' lengthAdjust='spacingAndGlyphs'>18.8 %</text></g>
+<rect x='51.90' y='283.72' width='99.12' height='18.96' style='stroke-width: 1.07; stroke: #F28B67; stroke-linecap: square; stroke-linejoin: miter; fill: #F28B67;' clip-path='url(#cpMzcuMTF8MzYyLjQ4fDMzNS4xOXw1My40OQ==)' />
+<rect x='51.90' y='302.68' width='261.18' height='18.96' style='stroke-width: 1.07; stroke: #58718F; stroke-linecap: square; stroke-linejoin: miter; fill: #58718F;' clip-path='url(#cpMzcuMTF8MzYyLjQ4fDMzNS4xOXw1My40OQ==)' />
+<rect x='51.90' y='229.55' width='86.54' height='18.96' style='stroke-width: 1.07; stroke: #F28B67; stroke-linecap: square; stroke-linejoin: miter; fill: #F28B67;' clip-path='url(#cpMzcuMTF8MzYyLjQ4fDMzNS4xOXw1My40OQ==)' />
+<rect x='51.90' y='248.51' width='264.33' height='18.96' style='stroke-width: 1.07; stroke: #58718F; stroke-linecap: square; stroke-linejoin: miter; fill: #58718F;' clip-path='url(#cpMzcuMTF8MzYyLjQ4fDMzNS4xOXw1My40OQ==)' />
+<rect x='51.90' y='175.38' width='88.11' height='18.96' style='stroke-width: 1.07; stroke: #F28B67; stroke-linecap: square; stroke-linejoin: miter; fill: #F28B67;' clip-path='url(#cpMzcuMTF8MzYyLjQ4fDMzNS4xOXw1My40OQ==)' />
+<rect x='51.90' y='194.34' width='253.31' height='18.96' style='stroke-width: 1.07; stroke: #58718F; stroke-linecap: square; stroke-linejoin: miter; fill: #58718F;' clip-path='url(#cpMzcuMTF8MzYyLjQ4fDMzNS4xOXw1My40OQ==)' />
+<rect x='51.90' y='121.20' width='70.80' height='18.96' style='stroke-width: 1.07; stroke: #F28B67; stroke-linecap: square; stroke-linejoin: miter; fill: #F28B67;' clip-path='url(#cpMzcuMTF8MzYyLjQ4fDMzNS4xOXw1My40OQ==)' />
+<rect x='51.90' y='140.17' width='280.06' height='18.96' style='stroke-width: 1.07; stroke: #58718F; stroke-linecap: square; stroke-linejoin: miter; fill: #58718F;' clip-path='url(#cpMzcuMTF8MzYyLjQ4fDMzNS4xOXw1My40OQ==)' />
+<rect x='51.90' y='67.03' width='58.21' height='18.96' style='stroke-width: 1.07; stroke: #F28B67; stroke-linecap: square; stroke-linejoin: miter; fill: #F28B67;' clip-path='url(#cpMzcuMTF8MzYyLjQ4fDMzNS4xOXw1My40OQ==)' />
+<rect x='51.90' y='85.99' width='295.79' height='18.96' style='stroke-width: 1.07; stroke: #58718F; stroke-linecap: square; stroke-linejoin: miter; fill: #58718F;' clip-path='url(#cpMzcuMTF8MzYyLjQ4fDMzNS4xOXw1My40OQ==)' />
+<g clip-path='url(#cpMzcuMTF8MzYyLjQ4fDMzNS4xOXw1My40OQ==)'><text x='116.09' y='297.28' style='font-size: 11.38px; fill: #FFFFFF; font-family: Arial;' textLength='29.10px' lengthAdjust='spacingAndGlyphs'>6.3 %</text></g>
+<g clip-path='url(#cpMzcuMTF8MzYyLjQ4fDMzNS4xOXw1My40OQ==)'><text x='270.56' y='316.24' style='font-size: 11.38px; fill: #FFFFFF; font-family: Arial;' textLength='35.43px' lengthAdjust='spacingAndGlyphs'>16.6 %</text></g>
+<g clip-path='url(#cpMzcuMTF8MzYyLjQ4fDMzNS4xOXw1My40OQ==)'><text x='103.51' y='243.10' style='font-size: 11.38px; fill: #FFFFFF; font-family: Arial;' textLength='29.10px' lengthAdjust='spacingAndGlyphs'>5.5 %</text></g>
+<g clip-path='url(#cpMzcuMTF8MzYyLjQ4fDMzNS4xOXw1My40OQ==)'><text x='273.70' y='262.06' style='font-size: 11.38px; fill: #FFFFFF; font-family: Arial;' textLength='35.43px' lengthAdjust='spacingAndGlyphs'>16.8 %</text></g>
+<g clip-path='url(#cpMzcuMTF8MzYyLjQ4fDMzNS4xOXw1My40OQ==)'><text x='105.08' y='188.93' style='font-size: 11.38px; fill: #FFFFFF; font-family: Arial;' textLength='29.10px' lengthAdjust='spacingAndGlyphs'>5.6 %</text></g>
+<g clip-path='url(#cpMzcuMTF8MzYyLjQ4fDMzNS4xOXw1My40OQ==)'><text x='262.69' y='207.89' style='font-size: 11.38px; fill: #FFFFFF; font-family: Arial;' textLength='35.43px' lengthAdjust='spacingAndGlyphs'>16.1 %</text></g>
+<g clip-path='url(#cpMzcuMTF8MzYyLjQ4fDMzNS4xOXw1My40OQ==)'><text x='87.77' y='134.76' style='font-size: 11.38px; fill: #FFFFFF; font-family: Arial;' textLength='29.10px' lengthAdjust='spacingAndGlyphs'>4.5 %</text></g>
+<g clip-path='url(#cpMzcuMTF8MzYyLjQ4fDMzNS4xOXw1My40OQ==)'><text x='289.44' y='153.72' style='font-size: 11.38px; fill: #FFFFFF; font-family: Arial;' textLength='35.43px' lengthAdjust='spacingAndGlyphs'>17.8 %</text></g>
+<g clip-path='url(#cpMzcuMTF8MzYyLjQ4fDMzNS4xOXw1My40OQ==)'><text x='75.19' y='80.59' style='font-size: 11.38px; fill: #FFFFFF; font-family: Arial;' textLength='29.10px' lengthAdjust='spacingAndGlyphs'>3.7 %</text></g>
+<g clip-path='url(#cpMzcuMTF8MzYyLjQ4fDMzNS4xOXw1My40OQ==)'><text x='305.17' y='99.55' style='font-size: 11.38px; fill: #FFFFFF; font-family: Arial;' textLength='35.43px' lengthAdjust='spacingAndGlyphs'>18.8 %</text></g>
 <defs>
-  <clipPath id='cpMC4wMHw3MjAuMDB8NDMyLjAwfDAuMDA='>
-    <rect x='0.00' y='0.00' width='720.00' height='432.00' />
+  <clipPath id='cpMC4wMHw1MDQuMDB8MzYwLjAwfDAuMDA='>
+    <rect x='0.00' y='0.00' width='504.00' height='360.00' />
   </clipPath>
 </defs>
-<g clip-path='url(#cpMC4wMHw3MjAuMDB8NDMyLjAwfDAuMDA=)'><text x='5.48' y='370.67' style='font-size: 12.00px; font-weight: bold; fill: #4D4D4D; font-family: Arial;' textLength='26.70px' lengthAdjust='spacingAndGlyphs'>2018</text></g>
-<g clip-path='url(#cpMC4wMHw3MjAuMDB8NDMyLjAwfDAuMDA=)'><text x='5.48' y='302.65' style='font-size: 12.00px; font-weight: bold; fill: #4D4D4D; font-family: Arial;' textLength='26.70px' lengthAdjust='spacingAndGlyphs'>2017</text></g>
-<g clip-path='url(#cpMC4wMHw3MjAuMDB8NDMyLjAwfDAuMDA=)'><text x='5.48' y='234.63' style='font-size: 12.00px; font-weight: bold; fill: #4D4D4D; font-family: Arial;' textLength='26.70px' lengthAdjust='spacingAndGlyphs'>2016</text></g>
-<g clip-path='url(#cpMC4wMHw3MjAuMDB8NDMyLjAwfDAuMDA=)'><text x='5.48' y='166.61' style='font-size: 12.00px; font-weight: bold; fill: #4D4D4D; font-family: Arial;' textLength='26.70px' lengthAdjust='spacingAndGlyphs'>2015</text></g>
-<g clip-path='url(#cpMC4wMHw3MjAuMDB8NDMyLjAwfDAuMDA=)'><text x='5.48' y='98.60' style='font-size: 12.00px; font-weight: bold; fill: #4D4D4D; font-family: Arial;' textLength='26.70px' lengthAdjust='spacingAndGlyphs'>2014</text></g>
-<rect x='595.63' y='216.51' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: #F28B67; stroke-linecap: square; stroke-linejoin: miter; fill: #F28B67;' clip-path='url(#cpMC4wMHw3MjAuMDB8NDMyLjAwfDAuMDA=)' />
-<rect x='595.63' y='233.79' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: #58718F; stroke-linecap: square; stroke-linejoin: miter; fill: #58718F;' clip-path='url(#cpMC4wMHw3MjAuMDB8NDMyLjAwfDAuMDA=)' />
-<g clip-path='url(#cpMC4wMHw3MjAuMDB8NDMyLjAwfDAuMDA=)'><text x='617.68' y='228.73' style='font-size: 12.00px; font-family: Arial;' textLength='83.37px' lengthAdjust='spacingAndGlyphs'>e-cigarette user</text></g>
-<g clip-path='url(#cpMC4wMHw3MjAuMDB8NDMyLjAwfDAuMDA=)'><text x='617.68' y='246.01' style='font-size: 12.00px; font-family: Arial;' textLength='91.37px' lengthAdjust='spacingAndGlyphs'>Cigarette smoker</text></g>
-<g clip-path='url(#cpMC4wMHw3MjAuMDB8NDMyLjAwfDAuMDA=)'><text x='37.11' y='44.22' style='font-size: 18.00px; fill: #BEBEBE; font-family: Arial;' textLength='458.18px' lengthAdjust='spacingAndGlyphs'>UK % of cigarette smokers and e-cigarette users (vapers)</text></g>
-<g clip-path='url(#cpMC4wMHw3MjAuMDB8NDMyLjAwfDAuMDA=)'><text x='37.11' y='21.23' style='font-size: 22.00px; font-weight: bold; font-family: Arial;' textLength='529.35px' lengthAdjust='spacingAndGlyphs'>UK cigarette smoking declines while vaping grows</text></g>
-<g clip-path='url(#cpMC4wMHw3MjAuMDB8NDMyLjAwfDAuMDA=)'><text x='37.11' y='424.00' style='font-size: 12.00px; fill: #A9A9A9; font-family: Arial;' textLength='192.08px' lengthAdjust='spacingAndGlyphs'>Source: Office for National Statistics</text></g>
+<g clip-path='url(#cpMC4wMHw1MDQuMDB8MzYwLjAwfDAuMDA=)'><text x='5.48' y='306.98' style='font-size: 12.00px; font-weight: bold; fill: #4D4D4D; font-family: Arial;' textLength='26.70px' lengthAdjust='spacingAndGlyphs'>2018</text></g>
+<g clip-path='url(#cpMC4wMHw1MDQuMDB8MzYwLjAwfDAuMDA=)'><text x='5.48' y='252.81' style='font-size: 12.00px; font-weight: bold; fill: #4D4D4D; font-family: Arial;' textLength='26.70px' lengthAdjust='spacingAndGlyphs'>2017</text></g>
+<g clip-path='url(#cpMC4wMHw1MDQuMDB8MzYwLjAwfDAuMDA=)'><text x='5.48' y='198.63' style='font-size: 12.00px; font-weight: bold; fill: #4D4D4D; font-family: Arial;' textLength='26.70px' lengthAdjust='spacingAndGlyphs'>2016</text></g>
+<g clip-path='url(#cpMC4wMHw1MDQuMDB8MzYwLjAwfDAuMDA=)'><text x='5.48' y='144.46' style='font-size: 12.00px; font-weight: bold; fill: #4D4D4D; font-family: Arial;' textLength='26.70px' lengthAdjust='spacingAndGlyphs'>2015</text></g>
+<g clip-path='url(#cpMC4wMHw1MDQuMDB8MzYwLjAwfDAuMDA=)'><text x='5.48' y='90.29' style='font-size: 12.00px; font-weight: bold; fill: #4D4D4D; font-family: Arial;' textLength='26.70px' lengthAdjust='spacingAndGlyphs'>2014</text></g>
+<rect x='379.63' y='180.51' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: #F28B67; stroke-linecap: square; stroke-linejoin: miter; fill: #F28B67;' clip-path='url(#cpMC4wMHw1MDQuMDB8MzYwLjAwfDAuMDA=)' />
+<rect x='379.63' y='197.79' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: #58718F; stroke-linecap: square; stroke-linejoin: miter; fill: #58718F;' clip-path='url(#cpMC4wMHw1MDQuMDB8MzYwLjAwfDAuMDA=)' />
+<g clip-path='url(#cpMC4wMHw1MDQuMDB8MzYwLjAwfDAuMDA=)'><text x='401.68' y='192.73' style='font-size: 12.00px; font-family: Arial;' textLength='83.37px' lengthAdjust='spacingAndGlyphs'>e-cigarette user</text></g>
+<g clip-path='url(#cpMC4wMHw1MDQuMDB8MzYwLjAwfDAuMDA=)'><text x='401.68' y='210.01' style='font-size: 12.00px; font-family: Arial;' textLength='91.37px' lengthAdjust='spacingAndGlyphs'>Cigarette smoker</text></g>
+<g clip-path='url(#cpMC4wMHw1MDQuMDB8MzYwLjAwfDAuMDA=)'><text x='37.11' y='44.22' style='font-size: 18.00px; fill: #BEBEBE; font-family: Arial;' textLength='458.18px' lengthAdjust='spacingAndGlyphs'>UK % of cigarette smokers and e-cigarette users (vapers)</text></g>
+<g clip-path='url(#cpMC4wMHw1MDQuMDB8MzYwLjAwfDAuMDA=)'><text x='37.11' y='21.23' style='font-size: 22.00px; font-weight: bold; font-family: Arial;' textLength='464.58px' lengthAdjust='spacingAndGlyphs'>Cigarette smoking declines as vaping grows</text></g>
+<g clip-path='url(#cpMC4wMHw1MDQuMDB8MzYwLjAwfDAuMDA=)'><text x='37.11' y='352.00' style='font-size: 12.00px; fill: #A9A9A9; font-family: Arial;' textLength='192.08px' lengthAdjust='spacingAndGlyphs'>Source: Office for National Statistics</text></g>
 </svg>

@@ -132,7 +132,7 @@ vaping? Perhaps. But not if new e-cigarette users have continued smoking
 or if new vapers have never smoked. We can test our theories with the
 next new chart.
 
-<img src="WholePop.svg" width="80%" />
+<img src="WholePop.svg" width="70%" />
 
 <details>
 
@@ -162,7 +162,7 @@ p <- smoke_vape %>%
                     position = "dodge",
                     width = 0.7) +
   ggplot2::geom_text(aes(label = paste(perc,"%")),
-            size = 5, 
+            size = 4, 
             position = position_dodge(width = 0.7),
                                        hjust= 1.2,
             colour = "white")  +
@@ -195,7 +195,7 @@ p <- smoke_vape %>%
         legend.title = element_blank(),
 #        plot.background = element_rect(fill = "white")
         ) +
-  ggplot2::labs(title = "UK cigarette smoking declines while vaping grows",
+  ggplot2::labs(title = "Cigarette smoking declines as vaping grows",
                 subtitle = "UK % of cigarette smokers and e-cigarette users (vapers)",
                 caption = "Source: Office for National Statistics") +
   ggplot2::scale_fill_manual(breaks=c("e-cigarette user","Cigarette smoker"),
@@ -207,9 +207,7 @@ p <- smoke_vape %>%
 
 ggplot2::ggsave(file="WholePop.svg",
                 plot = last_plot(),
-                device = "svg",
-                width=10, 
-                height=6)
+                device = "svg")
 ```
 
 </p>
@@ -247,17 +245,23 @@ among current or former smokers?
 ``` r
 my_pallete <- c("#696969","#808080","#A9A9A9","#F28B67")
 
+smoking_perc_by_e_cig <- smoking_perc_by_e_cig %>% 
+    dplyr::mutate(e_cig_status = case_when( e_cig_status == "Tried vaping, but didn't continue to vape" ~ 
+                                          "Tried vaping but stopped",
+                                        e_cig_status == "Current e-cigarette user (vaper)" ~"Current vaper",
+                                        TRUE ~ e_cig_status )) 
+
 smoking_perc_by_e_cig$e_cig_status <- 
   factor(smoking_perc_by_e_cig$e_cig_status, 
          levels = c(
                     
                     "Ex-vaper", 
-                    "Tried vaping, but didn't continue to vape",
+                    "Tried vaping but stopped",
                     "Never vaped",
-                    "Current e-cigarette user (vaper)" ))
+                    "Current vaper" ))
 
 p <- smoking_perc_by_e_cig %>% 
-  ggplot2::ggplot() +
+    ggplot2::ggplot() +
   ggplot2::aes(x = reorder(Year, desc(Year)),
                 y = perc,
                # colour = e_cig_status,
@@ -337,8 +341,8 @@ my_pallete <- c("#DCDCDC","#ffa500")
 
 smoking_perc_by_e_cig2 <- 
   smoking_perc_by_e_cig %>% 
-  dplyr::mutate(e_cig_status = case_when(e_cig_status == "Current e-cigarette user (vaper)" ~"Vaper",
-                                         e_cig_status %in% c("Tried vaping, but didn't continue to vape",
+  dplyr::mutate(e_cig_status = case_when(e_cig_status == "Current vaper" ~"Vaper",
+                                         e_cig_status %in% c("Tried vaping but stopped",
                  "Never vaped",
                  "Ex-vaper") ~ "Non-vaper")) %>% 
   dplyr::group_by(Year,e_cig_status,cigarette_status) %>% 
