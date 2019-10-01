@@ -132,7 +132,7 @@ vaping? Perhaps. But not if new e-cigarette users have continued smoking
 or if new vapers have never smoked. We can test our theories with the
 next new chart.
 
-![](WholePop.svg)<!-- -->
+<img src="WholePop.svg" width="80%" />
 
 <details>
 
@@ -195,8 +195,8 @@ p <- smoke_vape %>%
         legend.title = element_blank(),
 #        plot.background = element_rect(fill = "white")
         ) +
-  ggplot2::labs(title = "Cigarette smoking declines while vaping grows in the UK",
-                subtitle = "Proportion of cigarette smokers and e-cigarette users (vapers)",
+  ggplot2::labs(title = "UK cigarette smoking declines while vaping grows",
+                subtitle = "UK % of cigarette smokers and e-cigarette users (vapers)",
                 caption = "Source: Office for National Statistics") +
   ggplot2::scale_fill_manual(breaks=c("e-cigarette user","Cigarette smoker"),
                              values = c("#58718F",
@@ -236,7 +236,7 @@ among current and ex-smokers, not among those who have never smoked.**
 Perhaps a worrying trend for tobacco companies if market growth is only
 among current or former smokers?
 
-![](Stacked.svg)<!-- -->
+<img src="Stacked.svg" width="80%" />
 
 <details>
 
@@ -245,7 +245,6 @@ among current or former smokers?
 <p>
 
 ``` r
-#RColorBrewer::display.brewer.all()
 my_pallete <- c("#696969","#808080","#A9A9A9","#F28B67")
 
 smoking_perc_by_e_cig$e_cig_status <- 
@@ -270,7 +269,7 @@ p <- smoking_perc_by_e_cig %>%
   ggplot2::facet_grid(facets = ~cigarette_status) +
   geom_text(aes(label = perc),
             data = smoking_perc_by_e_cig %>% filter(perc>6),
-            size = 4, 
+            size = 3, 
             position = position_stack(vjust = 0.5),
             colour = "white") +
   ggplot2::theme_minimal() +
@@ -299,12 +298,12 @@ p <- smoking_perc_by_e_cig %>%
         legend.position="bottom",
         legend.title = element_blank(),
   #      plot.background = element_rect(fill = "white"),
-        panel.spacing = unit(1, "cm"),
+        panel.spacing = unit(0.5, "cm"),
         ) +
   ggplot2::scale_fill_manual(values = my_pallete) +
   ggplot2::scale_color_manual(values = my_pallete) +
-  ggplot2::labs(title = "Vaping growing only among smokers and ex-smokers in the UK",
-                subtitle = "e-cigarette user percentages in orange shown by smoking status",
+  ggplot2::labs(title = "Vaping grows only in Smokers & \n Ex-smokers",
+                subtitle = "UK % of vapers by smoking status",
                 caption = "Source: Office for National Statistics") +
   ggplot2::guides(color = guide_legend(reverse = TRUE),
                   fill = guide_legend(reverse = TRUE)) +
@@ -313,9 +312,7 @@ p <- smoking_perc_by_e_cig %>%
 
 ggplot2::ggsave(file="Stacked.svg",
                 plot = last_plot(),
-                device = "svg",
-                width=10, 
-                height=6)
+                device = "svg")
 ```
 
 </p>
@@ -325,9 +322,9 @@ ggplot2::ggsave(file="Stacked.svg",
 <br/>
 
 To further reduce the cognigive burden the non-vaping categories in grey
-can be lumped into one category in the final chart below.
+are lumped into one non-vaping category in the final chart below.
 
-![](StackedSimple.svg)<!-- -->
+<img src="StackedSimple.svg" width="80%" />
 
 <details>
 
@@ -336,7 +333,7 @@ can be lumped into one category in the final chart below.
 <p>
 
 ``` r
-my_pallete <- c("#A9A9A9","#F28B67")
+my_pallete <- c("#DCDCDC","#ffa500")
 
 smoking_perc_by_e_cig2 <- 
   smoking_perc_by_e_cig %>% 
@@ -390,12 +387,12 @@ p <- smoking_perc_by_e_cig2 %>%
         legend.position="bottom",
         legend.title = element_blank(),
   #      plot.background = element_rect(fill = "white"),
-        panel.spacing = unit(1, "cm"),
+        panel.spacing = unit(0.5, "cm"),
         ) +
   ggplot2::scale_fill_manual(values = my_pallete) +
   ggplot2::scale_color_manual(values = my_pallete) +
-  ggplot2::labs(title = "Vaping growing only among smokers and ex-smokers in the UK",
-                subtitle = "e-cigarette user percentages in orange shown by smoking status",
+  ggplot2::labs(title = "Vaping grows only in Smokers & \n Ex-smokers",
+                subtitle = "UK % of vapers by smoking status",
                 caption = "Source: Office for National Statistics") +
   ggplot2::guides(color = guide_legend(reverse = TRUE),
                   fill = guide_legend(reverse = TRUE)) +
@@ -405,9 +402,7 @@ p <- smoking_perc_by_e_cig2 %>%
 
 ggplot2::ggsave(file="StackedSimple.svg",
                 plot = last_plot(),
-                device = "svg",
-                width=10, 
-                height=6)
+                device = "svg")
 ```
 
 </p>
